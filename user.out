@@ -1,0 +1,20 @@
+mode: set
+projek/be8/delivery/controller/user/user.go:22.70,27.2 1 1
+projek/be8/delivery/controller/user/user.go:46.52,47.36 1 1
+projek/be8/delivery/controller/user/user.go:47.36,50.40 2 1
+projek/be8/delivery/controller/user/user.go:55.3,55.49 1 1
+projek/be8/delivery/controller/user/user.go:60.3,62.17 2 1
+projek/be8/delivery/controller/user/user.go:67.3,69.22 2 1
+projek/be8/delivery/controller/user/user.go:75.3,75.72 1 0
+projek/be8/delivery/controller/user/user.go:50.40,53.4 2 1
+projek/be8/delivery/controller/user/user.go:55.49,58.4 2 1
+projek/be8/delivery/controller/user/user.go:62.17,65.4 2 1
+projek/be8/delivery/controller/user/user.go:69.22,73.4 3 1
+projek/be8/delivery/controller/user/user.go:78.57,79.36 1 1
+projek/be8/delivery/controller/user/user.go:79.36,82.42 2 1
+projek/be8/delivery/controller/user/user.go:87.3,87.51 1 1
+projek/be8/delivery/controller/user/user.go:92.3,99.17 3 1
+projek/be8/delivery/controller/user/user.go:103.3,104.65 2 1
+projek/be8/delivery/controller/user/user.go:82.42,85.4 2 1
+projek/be8/delivery/controller/user/user.go:87.51,90.4 2 1
+projek/be8/delivery/controller/user/user.go:99.17,102.4 2 1
