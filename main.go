@@ -8,7 +8,6 @@ import (
 	cproduk "projek/be8/delivery/controller/produk"
 	ctransaksi "projek/be8/delivery/controller/transaksi"
 	cuser "projek/be8/delivery/controller/user"
-	"projek/be8/entities"
 	"projek/be8/utils"
 
 	// cbook "mware/be8/delivery/controller/book"
@@ -25,9 +24,7 @@ import (
 func main() {
 	conf := config.GetConfig()
 	db := utils.InitDB(conf)
-	db.AutoMigrate(entities.User{})
-	db.AutoMigrate(entities.Transaksi{})
-	db.AutoMigrate(entities.Produk{})
+	// utils.InitMigrate(db)
 	e := echo.New()
 
 	repoUser := userRepo.New(db)

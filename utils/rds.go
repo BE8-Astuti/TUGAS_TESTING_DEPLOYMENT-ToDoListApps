@@ -19,7 +19,6 @@ func InitDB(config *config.AppConfig) *gorm.DB {
 		config.DB_Port,
 		config.Name,
 	)
-	// "root:@tcp(127.0.0.1:3306)/be5db?charset=utf8&parseTime=True&loc=Local"
 
 	db, err := gorm.Open(mysql.Open(connectionString), &gorm.Config{})
 

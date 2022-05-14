@@ -5,6 +5,6 @@ import (
 )
 
 type ControllerUser interface {
-	InsertUser(c echo.Context) error
-	Login(c echo.Context) error
+	InsertUser() echo.HandlerFunc
+	Login() echo.HandlerFunc
 }
