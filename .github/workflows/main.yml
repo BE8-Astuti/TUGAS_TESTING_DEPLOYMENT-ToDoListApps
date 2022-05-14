@@ -5,10 +5,9 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ deploy]
+
   pull_request:
-    branches: [ deploy ]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,7 +33,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/be8app:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/stokkuapp:latest
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
@@ -44,5 +43,5 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             echo ${{ secrets.USERNAME }}
-            cd project/composev2
+            cd projek/stokku
             docker-compose down --rmi all && docker-compose up -d
