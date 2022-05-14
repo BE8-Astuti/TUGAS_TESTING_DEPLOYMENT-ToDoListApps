@@ -45,7 +45,7 @@ func (pr *ProdukRepo) GetAllProduk() ([]entities.Produk, error) {
 	log.Info()
 	return arrProduk, nil
 }
-func (pr *ProdukRepo) GetProdukID(ID uint) (entities.Produk, error) {
+func (pr *ProdukRepo) GetProdukID(ID int) (entities.Produk, error) {
 	arrProduk := []entities.Produk{}
 
 	if err := pr.Db.Where("id = ?", ID).Find(&arrProduk).Error; err != nil {
