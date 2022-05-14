@@ -44,5 +44,4 @@ jobs:
           script: |
             echo ${{ secrets.USERNAME }}
             echo "hallo"
-            # cd projek/stokku
-            # docker-compose down --rmi all && docker-compose up -d
+
