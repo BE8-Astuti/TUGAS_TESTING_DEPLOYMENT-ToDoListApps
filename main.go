@@ -37,5 +37,5 @@ func main() {
 
 	routes.RegisterPath(e, controllProduk, controllUser, controllTransaksi)
 
-	log.Fatal(e.Start(fmt.Sprintf(":%d", conf.Port)))
+	e.Logger.Fatal(e.Start(":8000"))
 }
