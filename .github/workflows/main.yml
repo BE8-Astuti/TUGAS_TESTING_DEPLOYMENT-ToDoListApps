@@ -7,7 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   
   push:
-    branches: [ master ]
+    branches: [ main ]
     #123
     
 
@@ -35,7 +35,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/stokkuapp:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/deploystock
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
@@ -44,6 +44,6 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd projek/stokku
+            cd stock
             docker-compose down --rmi all && docker-compose up -d
 
