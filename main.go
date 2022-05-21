@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"log"
-
+	
 	"projek/be8/config"
 	cproduk "projek/be8/delivery/controller/produk"
 	ctransaksi "projek/be8/delivery/controller/transaksi"
